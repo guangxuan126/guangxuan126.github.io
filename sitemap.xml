@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.gxuann.cn/2017/chrome-extensions1/</loc>
+    
+    <lastmod>2018-08-02T17:06:07.139Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.gxuann.cn/2018/css-style-guide/</loc>
+    
+    <lastmod>2018-08-02T17:06:02.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.gxuann.cn/2018/git-instruction/</loc>
+    
+    <lastmod>2018-08-02T17:05:58.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.gxuann.cn/2018/Google-Year-in-search-2017/</loc>
+    
+    <lastmod>2018-08-02T17:05:54.187Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.gxuann.cn/2017/Hello-World-hello-HEXO/</loc>
+    
+    <lastmod>2018-08-02T17:05:49.116Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.gxuann.cn/2018/html-style-guide/</loc>
+    
+    <lastmod>2018-08-02T17:05:44.540Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.gxuann.cn/Search/index.html</loc>
+    
+    <lastmod>2018-08-02T17:04:22.525Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.gxuann.cn/about/index.html</loc>
     
     <lastmod>2018-08-01T10:48:43.400Z</lastmod>
@@ -65,13 +114,6 @@
   </url>
   
   <url>
-    <loc>https://blog.gxuann.cn/2018/Google-Year-in-search-2017/</loc>
-    
-    <lastmod>2018-01-27T14:50:12.545Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.gxuann.cn/2017/msdn-manual/</loc>
     
     <lastmod>2018-01-27T14:33:22.427Z</lastmod>
@@ -86,44 +128,9 @@
   </url>
   
   <url>
-    <loc>https://blog.gxuann.cn/2018/css-style-guide/</loc>
-    
-    <lastmod>2018-01-13T04:06:13.123Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.gxuann.cn/2018/html-style-guide/</loc>
-    
-    <lastmod>2018-01-09T15:28:23.843Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.gxuann.cn/2017/why-chrome/</loc>
     
     <lastmod>2018-01-06T02:55:53.890Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.gxuann.cn/2017/chrome-extensions1/</loc>
-    
-    <lastmod>2018-01-06T02:55:39.415Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.gxuann.cn/2017/Hello-World-hello-HEXO/</loc>
-    
-    <lastmod>2018-01-06T02:55:31.288Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.gxuann.cn/2018/git-instruction/</loc>
-    
-    <lastmod>2018-01-05T13:48:23.043Z</lastmod>
     
   </url>
   

@@ -13,7 +13,8 @@
 <meta property="og:url" content="//blog.gxuann.cn/2018/git-instruction/index.html">
 <meta property="og:site_name" content="GXUANN&#39;s Blog">
 <meta property="og:description" content="本文对指令按照使用场景(建库，查看，修改，分支)进行分类归纳，介绍指令基本含义和用法，方便查阅。 工作区、版本库和暂存区   工作区: 即工作目录。   版本库: 隐藏目录.git，这个就是git的版本库。   暂存区: Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEA">
-<meta property="og:updated_time" content="2018-01-05T13:48:23.043Z">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-02T17:05:58.546Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常用指令整理">
 <meta name="twitter:description" content="本文对指令按照使用场景(建库，查看，修改，分支)进行分类归纳，介绍指令基本含义和用法，方便查阅。 工作区、版本库和暂存区   工作区: 即工作目录。   版本库: 隐藏目录.git，这个就是git的版本库。   暂存区: Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEA">
@@ -66,6 +67,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </span>
@@ -157,8 +160,8 @@
 <h4 id="远程分支"><a href="#远程分支" class="headerlink" title="远程分支"></a>远程分支</h4><p>  &emsp;&emsp;·<code>git fetch origin</code> 这个命令查找 “origin” 是哪一个服务器，从中抓取本地没有的数据，并且更新本地数据库，移动 <code>origin/master</code>指针指向新的、更新后的位置<br>  &emsp;&emsp;·<code>git push (remote) (branch)</code>推送本地的分支来更新远程仓库上的 同名分支。如前文提到的<code>git push origin master</code>就是将本地master分支推送到远程master分支；复杂一点的，<code>git push origin serverfix:awesomebranch</code>将本地的 serverfix分支推送到远程仓库上的awesomebranch分支<br>  &emsp;&emsp;·<code>git push origin --delete serverfix</code>或者<code>git push origin :remotebranch</code>,删除远程的serverfix分支<br>  &emsp;&emsp;·<code>git pull</code>在大多数情况下它的含义是一个<code>git fetch</code>紧接着一个<code>git merge</code>命令。<br>  <br></p>
 <h3 id="推荐优秀教程"><a href="#推荐优秀教程" class="headerlink" title="推荐优秀教程"></a>推荐优秀教程</h3><blockquote>
 <ul>
-<li><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Git</a></li>
-<li><a href="http://iissnan.com/progit/" target="_blank" rel="external">Pro Git</a></li>
+<li><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">Git</a></li>
+<li><a href="http://iissnan.com/progit/" target="_blank" rel="noopener">Pro Git</a></li>
 </ul>
 </blockquote>
 <p><br><br>&amp;&amp;<br>end</p>
@@ -183,6 +186,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </div>
@@ -220,7 +225,8 @@
     
     <footer id="footer">
   <div class="footer-left">
-    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN
+    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN<br>
+    All articles are under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
   </div>
   <div class="footer-right">
     <nav>
@@ -233,6 +239,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </nav>

@@ -8,13 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="技术,分享,讨论">
 <meta property="og:type" content="website">
-<meta property="og:title" content="GXUANN&#39;s Blog">
-<meta property="og:url" content="//blog.gxuann.cn/archives/2017/index.html">
+<meta property="og:title" content="Search">
+<meta property="og:url" content="//blog.gxuann.cn/Search/index.html">
 <meta property="og:site_name" content="GXUANN&#39;s Blog">
 <meta property="og:description" content="技术,分享,讨论">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-02T17:04:22.525Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GXUANN&#39;s Blog">
+<meta name="twitter:title" content="Search">
 <meta name="twitter:description" content="技术,分享,讨论">
     
     
@@ -35,7 +36,7 @@
         
     
     <!-- title -->
-    <title>GXUANN&#39;s Blog</title>
+    <title>Search</title>
     <!-- styles -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- persian styles -->
@@ -84,157 +85,23 @@
 </header>
 
         
-        <div id="archive">
-  <ul class="post-list">
-    
-    
-    
-      
-      
-      
-      
-        <h2>2017</h2>
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-10-20T08:09:23.000Z" itemprop="datePublished">2017-10-20</time>
-    </div>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+    <section id="search">
+  <form>
+    <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+  </form>
+  <div id="search-result"></div>
+  <p class="search-no-result">抱歉，没有符合您搜索条件的结果。请换其它关键词再试。</p>
+</section>
 
-
-        <span>
-    
-        <a class="" href="/2017/markdown-manual/">markdown语法手册</a>
-    
-
-
-</span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-09-17T10:47:41.000Z" itemprop="datePublished">2017-09-17</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2017/chrome-extensions1/">Chrome插件推荐-1</a>
-    
-
-
-</span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-09-01T10:49:49.000Z" itemprop="datePublished">2017-09-01</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2017/why-chrome/">为什么选择Chrome</a>
-    
-
-
-</span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-08-20T11:00:54.000Z" itemprop="datePublished">2017-08-20</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2017/install-windows/">重新安装Windows的简易教程</a>
-    
-
-
-</span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-08-12T06:37:50.000Z" itemprop="datePublished">2017-08-12</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2017/video-anls/">视频解析工具</a>
-    
-
-
-</span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-08-11T11:09:06.000Z" itemprop="datePublished">2017-08-11</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2017/msdn-manual/">MSDN资源手册</a>
-    
-
-
-</span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-07-28T09:22:21.000Z" itemprop="datePublished">2017-07-28</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2017/Hello-World-hello-HEXO/">Hello-World-hello-HEXO</a>
-    
-
-
-</span>
-      </li>
-    
-  </ul>
+  
   
 
-</div>
+  <div class="content" itemprop="articleBody">
+    
+  </div>
+</article>
 
     </div>
     
@@ -273,6 +140,35 @@
 <script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/main.js"></script>
 <!-- search -->
+
+  <script src="/js/search.js"></script>
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input");
+    var $resultArea = $("#search-result");
+
+    inputArea.onfocus = function() {
+      var search_path = "search.xml";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "/" + search_path;
+      searchFunc(path, 'search-input', 'search-result');
+    }
+
+    inputArea.onkeydown = function(){
+        if(event.keyCode==13){
+            return false
+        }
+    }
+
+    $resultArea.bind("DOMNodeRemoved DOMNodeInserted", function(e) {
+        if (!$(e.target).text()) {
+            $(".search-no-result").show(200);
+        } else {
+            $(".search-no-result").hide();
+        }
+    })
+  </script>
 
 <!-- Google Analytics -->
 

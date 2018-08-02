@@ -13,6 +13,7 @@
 <meta property="og:url" content="//blog.gxuann.cn/2018/wechat-game-jump/index.html">
 <meta property="og:site_name" content="GXUANN&#39;s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;2017年12月28日，微信正式公布小游戏产品，其中第一批开放了15款H5小游戏，“跳一跳”即是其中之一。游戏玩法很简单，用户只需长按住屏幕中黑色的抽象小人，进行蓄力，蓄力越久就能跳得越远。只要小黑人不落到方格外，就能得分。一旦跳出方格外，游戏就算结束。这款游戏即点即玩，无需下载安装，玩家可以在微信内和好友一起玩。  &amp;emsp;&amp;emsp;“今天你跳了吗？”这几天，微">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="https://images.gxuann.cn/archives/wechat-game-jump-1.png">
 <meta property="og:image" content="https://images.gxuann.cn/archives/wechat-game-jump-2.jpg">
 <meta property="og:image" content="https://images.gxuann.cn/archives/wechat-game-jump-3.png">
@@ -71,6 +72,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </span>
@@ -153,13 +156,13 @@
 <p>  &emsp;&emsp;但既然是高分攻略，就肯定不能使用传统攻略的。<br>  &emsp;&emsp;这周做课设的时候，逛Github时，发现一位作者写了一段关于「用Python来玩跳一跳」的代码，阅读之后，我按照要求把这段代码跑起来了测试了一下，发现果然是高分神器！</p>
 <hr>
 <p>下面来说说这个脚本：<br><img src="https://images.gxuann.cn/archives/wechat-game-jump-3.png" alt=""></p>
-<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>1.将手机界面停留在「跳一跳」界面<br>2.用 ADB 工具获取当前手机截图，并用 ADB 将截图 pull 上来<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">adb shell screencap -p /sdcard/autojump.png</div><div class="line">adb pull /sdcard/autojump.png</div></pre></td></tr></table></figure></p>
-<p>3.计算按压时间<br>4.用 ADB 工具点击屏幕蓄力一跳<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">adb shell input swipe x y x y time(ms)</div></pre></td></tr></table></figure></p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>1.将手机界面停留在「跳一跳」界面<br>2.用 ADB 工具获取当前手机截图，并用 ADB 将截图 pull 上来<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb shell screencap -p /sdcard/autojump.png</span><br><span class="line">adb pull /sdcard/autojump.png</span><br></pre></td></tr></table></figure></p>
+<p>3.计算按压时间<br>4.用 ADB 工具点击屏幕蓄力一跳<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb shell input swipe x y x y time(ms)</span><br></pre></td></tr></table></figure></p>
 <h4 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h4><h5 id="简要步骤："><a href="#简要步骤：" class="headerlink" title="简要步骤："></a>简要步骤：</h5><p>首先搭建运行环境<code>ADB</code>和<code>Python</code>,然后将ADB添加到环境变量当中，最后就可以直接运行<code>.py</code>的脚本了。</p>
 <h5 id="下面是详细步骤："><a href="#下面是详细步骤：" class="headerlink" title="下面是详细步骤："></a>下面是详细步骤：</h5><p><img src="https://images.gxuann.cn/archives/wechat-game-jump-4.png" alt=""></p>
 <h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>大家可以去作者的repo页面查看更详细的内容以及下载这个脚本</p>
 <blockquote>
-<p><a href="https://github.com/wangshub/wechat_jump_game" target="_blank" rel="external">Github:wangshub/wechat_jump_game</a><br>脚本由@wangshub提供</p>
+<p><a href="https://github.com/wangshub/wechat_jump_game" target="_blank" rel="noopener">Github:wangshub/wechat_jump_game</a><br>脚本由@wangshub提供</p>
 </blockquote>
 <p><br><br>&amp;&amp;<br>end</p>
 
@@ -183,6 +186,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </div>
@@ -220,7 +225,8 @@
     
     <footer id="footer">
   <div class="footer-left">
-    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN
+    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN<br>
+    All articles are under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
   </div>
   <div class="footer-right">
     <nav>
@@ -233,6 +239,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </nav>

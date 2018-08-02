@@ -13,6 +13,7 @@
 <meta property="og:url" content="//blog.gxuann.cn/2018/java-study-notes3/index.html">
 <meta property="og:site_name" content="GXUANN&#39;s Blog">
 <meta property="og:description" content="算术运算符与赋值运算符赋值运算符 格式：变量=表达式; 例：int n = 3;    复合赋值运算符   运算符 表达式 计算 结果(x=15)     += x+=5 x=x+5 20   -= x-=5 x=x-5 10   *= x*=5 x=x*5 75   /= x/=5 x=x/5 3   %= x%=5 x=x%5 0    算术运算符 主要用于基本的算术运算     算数运算符">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="https://images.gxuann.cn/banner/java-study-notes.png">
 <meta property="og:updated_time" content="2018-02-22T16:31:30.834Z">
 <meta name="twitter:card" content="summary">
@@ -68,6 +69,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </span>
@@ -320,7 +323,7 @@
 </tbody>
 </table>
 <h2 id="if条件结构"><a href="#if条件结构" class="headerlink" title="if条件结构"></a>if条件结构</h2><ul>
-<li>简单if语句的格式：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(条件)&#123;</div><div class="line">    &lt;语句块&gt;</div><div class="line">&#125;<span class="keyword">else</span>&#123;</div><div class="line">    &lt;语句块&gt;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li>简单if语句的格式：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(条件)&#123;</span><br><span class="line">    &lt;语句块&gt;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    &lt;语句块&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><ul>
@@ -330,23 +333,23 @@
 <p><img src="https://images.gxuann.cn/archives/java-study-notes3-logical.png" alt=""></p>
 <ul>
 <li><p>&amp;：会计算整个表达式，再进行判断；&amp;&amp;：先计算左边的表达式，如果成立才接着计算右边的表达式，如果不成立，则后面的都不计算</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> n=<span class="number">3</span>;</div><div class="line"><span class="keyword">boolean</span> b = (<span class="number">3</span>&gt;<span class="number">7</span>)&amp;&amp;((n++)&lt;<span class="number">2</span>)</div><div class="line">System.out.println(b,n);   <span class="comment">//b=false,n=3</span></div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">boolean</span> b = (<span class="number">3</span>&gt;<span class="number">7</span>)&amp;&amp;((n++)&lt;<span class="number">2</span>)</span><br><span class="line">System.out.println(b,n);   <span class="comment">//b=false,n=3</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>||:叫做短路运算符，如果第一个表达式的值就能决定表达式最后的结果，运算符右边的表达式就不再计算了</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> n=<span class="number">3</span>;</div><div class="line"><span class="keyword">boolean</span> b = (<span class="number">3</span>&lt;<span class="number">7</span>)||((n++)&lt;<span class="number">2</span>)</div><div class="line">System.out,println(b,n);   <span class="comment">//b=true,n=3</span></div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">boolean</span> b = (<span class="number">3</span>&lt;<span class="number">7</span>)||((n++)&lt;<span class="number">2</span>)</span><br><span class="line">System.out,println(b,n);   <span class="comment">//b=true,n=3</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h1 id="条件运算符与运算符的优先级"><a href="#条件运算符与运算符的优先级" class="headerlink" title="条件运算符与运算符的优先级"></a>条件运算符与运算符的优先级</h1><h2 id="条件与算符"><a href="#条件与算符" class="headerlink" title="条件与算符"></a>条件与算符</h2><ul>
 <li>Java中的条件运算符是三目运算符</li>
 <li><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">布尔表达式?表达式1:表达式2</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">布尔表达式?表达式1:表达式2</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>当布尔表达式的值为true，则返回表达式1的值，否则返回表达式2的值</p>
 </li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a=<span class="number">10</span>;</div><div class="line"><span class="keyword">int</span> b=<span class="number">20</span>;</div><div class="line"><span class="keyword">int</span> max;</div><div class="line">max = a&gt;b?a:b;</div><div class="line">System.out.println(max);  <span class="comment">//求a和b的最大值,max=20</span></div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">20</span>;</span><br><span class="line"><span class="keyword">int</span> max;</span><br><span class="line">max = a&gt;b?a:b;</span><br><span class="line">System.out.println(max);  <span class="comment">//求a和b的最大值,max=20</span></span><br></pre></td></tr></table></figure>
 <h2 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h2><p><strong>优先级由大到小排列</strong><br><img src="https://images.gxuann.cn/archives/java-study-notes3-priority.png" alt=""></p>
-<h1 id="计算闰年问题"><a href="#计算闰年问题" class="headerlink" title="计算闰年问题"></a>计算闰年问题</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//判断输入的年份是否是闰年</span></div><div class="line">	System.out.println(<span class="string">"请输入年份:"</span>);</div><div class="line">	Scanner sc = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">	<span class="keyword">int</span> year = sc.nextInt();</div><div class="line"><span class="comment">//闰年的判断规则：能被4整除但是不能被100整除的年份，或者能被400整除的年份</span></div><div class="line">	<span class="keyword">if</span>(((year%<span class="number">4</span>==<span class="number">0</span>)&amp;(year%<span class="number">100</span>!=<span class="number">0</span>))|(year%<span class="number">400</span>==<span class="number">0</span>)) &#123;</div><div class="line">		System.out.println(year+<span class="string">"是闰年"</span>);</div><div class="line">	&#125;<span class="keyword">else</span> &#123;</div><div class="line">		System.out.println(year+<span class="string">"不是闰年"</span>);</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h1 id="计算闰年问题"><a href="#计算闰年问题" class="headerlink" title="计算闰年问题"></a>计算闰年问题</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//判断输入的年份是否是闰年</span></span><br><span class="line">	System.out.println(<span class="string">"请输入年份:"</span>);</span><br><span class="line">	Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">	<span class="keyword">int</span> year = sc.nextInt();</span><br><span class="line"><span class="comment">//闰年的判断规则：能被4整除但是不能被100整除的年份，或者能被400整除的年份</span></span><br><span class="line">	<span class="keyword">if</span>(((year%<span class="number">4</span>==<span class="number">0</span>)&amp;(year%<span class="number">100</span>!=<span class="number">0</span>))|(year%<span class="number">400</span>==<span class="number">0</span>)) &#123;</span><br><span class="line">		System.out.println(year+<span class="string">"是闰年"</span>);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		System.out.println(year+<span class="string">"不是闰年"</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
   </div>
 </article>
@@ -368,6 +371,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </div>
@@ -405,7 +410,8 @@
     
     <footer id="footer">
   <div class="footer-left">
-    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN
+    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN<br>
+    All articles are under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
   </div>
   <div class="footer-right">
     <nav>
@@ -418,6 +424,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </nav>

@@ -13,6 +13,7 @@
 <meta property="og:url" content="//blog.gxuann.cn/2018/regex-emailverification/index.html">
 <meta property="og:site_name" content="GXUANN&#39;s Blog">
 <meta property="og:description" content="定义 正则表达式（Regular Expression，在代码中常简写为regex、regexp或RE），又称正规表示式、正规表示法、正规表达式、规则表达式、常规表示法，是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。在很多文本编辑器里，正则表达式通常被用来检索、替换那些匹配某个模式的文本。  在我的小程序「QR二维码」中的反馈系统就用到了正则表达式来验">
+<meta property="og:locale" content="default">
 <meta property="og:image" content="https://images.gxuann.cn/archives/regex-emailverification1.gif">
 <meta property="og:updated_time" content="2018-08-01T10:35:15.626Z">
 <meta name="twitter:card" content="summary">
@@ -68,6 +69,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </span>
@@ -146,7 +149,7 @@
 <p>正则表达式（Regular Expression，在代码中常简写为regex、regexp或RE），又称<strong>正规表示式、正规表示法、正规表达式、规则表达式、常规表示法</strong>，是计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。在很多文本编辑器里，正则表达式通常被用来检索、替换那些匹配某个模式的文本。</p>
 </blockquote>
 <p>在我的小程序「QR二维码」中的反馈系统就用到了正则表达式来验证邮箱的有效性。<br>首先贴上代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]&#123;2,3&#125;$</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]&#123;2,3&#125;$</span><br></pre></td></tr></table></figure>
 <h1 id="满足验证的逻辑条件"><a href="#满足验证的逻辑条件" class="headerlink" title="满足验证的逻辑条件"></a>满足验证的逻辑条件</h1><p>通常，邮箱是由<code>用户名+@+域名</code>这样的形式构成,所以应该满足以下几个条件：</p>
 <ol>
 <li>@之前的字符串由大小写字母、数字构成</li>
@@ -185,8 +188,8 @@
 </tr>
 </tbody>
 </table>
-<p>这里推荐一个 正则表达式 的教程： <a href="http://www.runoob.com/regexp/regexp-tutorial.html" target="_blank" rel="external">正则表达式-菜鸟教程</a></p>
-<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p>用小程序上的一段代码：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">formBindsubmit: <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> strEmail = e.detail.value.email;</div><div class="line">    <span class="keyword">var</span> pattern = <span class="regexp">/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]&#123;2,3&#125;$/</span>;</div><div class="line">    <span class="keyword">var</span> strEmail = pattern.test(strEmail);</div><div class="line">    <span class="keyword">if</span>(strEmail)&#123;</div><div class="line">        ...</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这里推荐一个 正则表达式 的教程： <a href="http://www.runoob.com/regexp/regexp-tutorial.html" target="_blank" rel="noopener">正则表达式-菜鸟教程</a></p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p>用小程序上的一段代码：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">formBindsubmit: <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> strEmail = e.detail.value.email;</span><br><span class="line">    <span class="keyword">var</span> pattern = <span class="regexp">/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]&#123;2,3&#125;$/</span>;</span><br><span class="line">    <span class="keyword">var</span> strEmail = pattern.test(strEmail);</span><br><span class="line">    <span class="keyword">if</span>(strEmail)&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>监听表格提交的按钮事件，用这个表达式来检测用户输入的Email是否合法。<br><img src="https://images.gxuann.cn/archives/regex-emailverification1.gif" alt=""><br><br><br>&amp;&amp;<br>end</p>
 
   </div>
@@ -209,6 +212,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </div>
@@ -246,7 +251,8 @@
     
     <footer id="footer">
   <div class="footer-left">
-    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN
+    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN<br>
+    All articles are under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
   </div>
   <div class="footer-right">
     <nav>
@@ -259,6 +265,8 @@
           <li><a href="/archives/">归档</a></li>
          
           <li><a href="/projects_url">项目</a></li>
+         
+          <li><a href="/Search/">搜索</a></li>
         
       </ul>
     </nav>
