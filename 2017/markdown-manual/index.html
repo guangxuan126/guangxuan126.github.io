@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Markdown Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。 John Gruber 在 2004 年创造了 Markdown 语言，在语法上有很大一部分是跟亚伦·斯沃茨（Aaron Swartz）">
+<meta name="keywords" content="tutorials">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown语法手册">
+<meta property="og:url" content="//blog.gxuann.cn/2017/markdown-manual/index.html">
+<meta property="og:site_name" content="GXUANN&#39;s Blog">
+<meta property="og:description" content="Markdown Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。 John Gruber 在 2004 年创造了 Markdown 语言，在语法上有很大一部分是跟亚伦·斯沃茨（Aaron Swartz）">
+<meta property="og:image" content="https://images.gxuann.cn/markdown-manual_md1.png">
+<meta property="og:image" content="https://images.gxuann.cn/logo.png">
+<meta property="og:updated_time" content="2017-10-20T09:18:11.862Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="markdown语法手册">
+<meta name="twitter:description" content="Markdown Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。 John Gruber 在 2004 年创造了 Markdown 语言，在语法上有很大一部分是跟亚伦·斯沃茨（Aaron Swartz）">
+<meta name="twitter:image" content="https://images.gxuann.cn/markdown-manual_md1.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.png">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>markdown语法手册</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Articles</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/git-instruction/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2017/chrome-extensions1/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=//blog.gxuann.cn/2017/markdown-manual/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=//blog.gxuann.cn/2017/markdown-manual/&text=markdown语法手册"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=//blog.gxuann.cn/2017/markdown-manual/&is_video=false&description=markdown语法手册"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=markdown语法手册&body=Check out this article: //blog.gxuann.cn/2017/markdown-manual/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=//blog.gxuann.cn/2017/markdown-manual/&name=markdown语法手册&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown"><span class="toc-number">1.</span> <span class="toc-text">Markdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-语法"><span class="toc-number">2.</span> <span class="toc-text">Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-标题"><span class="toc-number">2.0.1.</span> <span class="toc-text">1.标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-斜体-amp-加粗"><span class="toc-number">2.0.2.</span> <span class="toc-text">2.斜体&加粗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-删除线"><span class="toc-number">2.0.3.</span> <span class="toc-text">3.删除线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-链接"><span class="toc-number">2.0.4.</span> <span class="toc-text">4.链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-图片"><span class="toc-number">2.0.5.</span> <span class="toc-text">5.图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-代码-amp-代码段-amp-代码高亮"><span class="toc-number">2.0.6.</span> <span class="toc-text">6.代码&代码段&代码高亮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-表格"><span class="toc-number">2.0.7.</span> <span class="toc-text">7.表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-引用"><span class="toc-number">2.0.8.</span> <span class="toc-text">8.引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-复选框-amp-Todo-list"><span class="toc-number">2.0.9.</span> <span class="toc-text">9.复选框&Todo list</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-有序-amp-无序列表"><span class="toc-number">2.0.10.</span> <span class="toc-text">10.有序&无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-分割线"><span class="toc-number">2.0.11.</span> <span class="toc-text">11.分割线</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        markdown语法手册
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">GXUANN's Blog</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-10-20T08:09:23.000Z" itemprop="datePublished">2017-10-20</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/tutorials/">tutorials</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p> <strong>Markdown</strong> 是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p>
+<p>John Gruber 在 2004 年创造了 Markdown 语言，在语法上有很大一部分是跟亚伦·斯沃茨（Aaron Swartz）共同合作的。这个语言的目的是希望大家使用“易于阅读、易于撰写的纯文字格式，并选择性的转换成有效的 XHTML (或是HTML)”。 其中最重要的设计是可读性，也就是说这个语言应该要能直接在字面上的被阅读，而不用被一些格式化指令标记 (像是 RTF 与 HTML)。 因此，它是现行电子邮件标记格式的惯例，虽然它也借鉴了很多早期的标记语言，如：setext、Texile、reStructuredText。 许多网站都使用 Markdown 或是其变种，例如：GitHub、reddit、Diaspora、Stack Exchange、OpenStreetMap 与 SourceForge 让用户更利于讨论。</p>
+<hr>
+<h1 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h1><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 标题H1</div><div class="line">## 标题H2</div><div class="line">### 标题H3</div><div class="line">#### 标题H4</div><div class="line">##### 标题H5</div><div class="line">###### 标题H6</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br><img src="https://images.gxuann.cn/markdown-manual_md1.png" alt=""></p>
+<h3 id="2-斜体-amp-加粗"><a href="#2-斜体-amp-加粗" class="headerlink" title="2.斜体&amp;加粗"></a>2.斜体&amp;加粗</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">**加粗**</div><div class="line">__加粗__</div><div class="line">*斜体*</div><div class="line">_斜体_</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br><strong>加粗</strong><br><strong>加粗</strong><br><em>斜体</em><br><em>斜体</em></p>
+<h3 id="3-删除线"><a href="#3-删除线" class="headerlink" title="3.删除线"></a>3.删除线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~被删除的内容~~</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br><del>被删除的内容</del></p>
+<h3 id="4-链接"><a href="#4-链接" class="headerlink" title="4.链接"></a>4.链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这是一个跳转到[百度](https://www.baidu.com/)的链接</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br>这是一个跳转到<a href="https://www.baidu.com/" target="_blank" rel="external">百度</a>的链接</p>
+<h3 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![alt注释](https://images.gxuann.cn/logo.png)</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br><img src="https://images.gxuann.cn/logo.png" alt="这是logo"></p>
+<h3 id="6-代码-amp-代码段-amp-代码高亮"><a href="#6-代码-amp-代码段-amp-代码高亮" class="headerlink" title="6.代码&amp;代码段&amp;代码高亮"></a>6.代码&amp;代码段&amp;代码高亮</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">使用``或者```将代码括起来以显示单行或者多行代码</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br><code>this is code !</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">cd</span>(<span class="params">num</span>) </span>&#123;</div><div class="line">    $(<span class="string">'#code'</span>).val(num + <span class="string">'秒后可重发'</span>);</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (num - <span class="number">1</span> &gt;= <span class="number">0</span>) &#123;</div><div class="line">            cd(num - <span class="number">1</span>);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            $(<span class="string">'#code'</span>).removeClass(<span class="string">'bg-gray'</span>).prop(<span class="string">'disabled'</span>, <span class="literal">false</span>).val(<span class="string">'重新发送验证码'</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="number">1000</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="7-表格"><a href="#7-表格" class="headerlink" title="7.表格"></a>7.表格</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">使用 | - : 来构建表格</div><div class="line">| Header One     | Header Two     |</div><div class="line">| :------------- | :------------- |</div><div class="line">| Item One       | Item Two       |</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br>| Header One     | Header Two     |<br>| :————- | :————- |<br>| Item One       | Item Two       |</p>
+<h3 id="8-引用"><a href="#8-引用" class="headerlink" title="8.引用"></a>8.引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;使用右尖括号放在引用文字的开头。</div><div class="line">&gt;这里是一段引用的文字。</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code></p>
+<blockquote>
+<p>这里是一段引用的文字。</p>
+</blockquote>
+<h3 id="9-复选框-amp-Todo-list"><a href="#9-复选框-amp-Todo-list" class="headerlink" title="9.复选框&amp;Todo list"></a>9.复选框&amp;Todo list</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">使用-和一个空格还有[]来表示选中或者未选中状态。</div><div class="line">- [x] A</div><div class="line">- [ ] B</div><div class="line">- [x] 已选中</div><div class="line">- [ ] 未选中</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code></p>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> A</li>
+<li style="list-style: none"><input type="checkbox"> B</li>
+<li style="list-style: none"><input type="checkbox" checked> 已选中</li>
+<li style="list-style: none"><input type="checkbox"> 未选中</li>
+</ul>
+<h3 id="10-有序-amp-无序列表"><a href="#10-有序-amp-无序列表" class="headerlink" title="10.有序&amp;无序列表"></a>10.有序&amp;无序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">使用- 或者 数字来表示无序列表和有序列表的项目，注意符号与项目之间有空格。</div><div class="line">这是无序列表：</div><div class="line">- 项目1</div><div class="line">- 项目2</div><div class="line">- 项目3</div><div class="line"></div><div class="line">这是有序列表：</div><div class="line">1. 项目1</div><div class="line">2. 项目2</div><div class="line">3. 项目3</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br>这是无序列表：</p>
+<ul>
+<li>项目1</li>
+<li>项目2</li>
+<li>项目3</li>
+</ul>
+<p>这是有序列表：</p>
+<ol>
+<li>项目1</li>
+<li>项目2</li>
+<li>项目3</li>
+</ol>
+<h3 id="11-分割线"><a href="#11-分割线" class="headerlink" title="11.分割线"></a>11.分割线</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">使用连续的三个---表示分割线</div></pre></td></tr></table></figure>
+<p><code>渲染效果：</code><br>这下面是个分割线↓</p>
+<hr>
+<p>这上面是个分割线↑</p>
+<p><br><br>未完待续…<br>&amp;&amp;<br>end</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Articles</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown"><span class="toc-number">1.</span> <span class="toc-text">Markdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-语法"><span class="toc-number">2.</span> <span class="toc-text">Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-标题"><span class="toc-number">2.0.1.</span> <span class="toc-text">1.标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-斜体-amp-加粗"><span class="toc-number">2.0.2.</span> <span class="toc-text">2.斜体&加粗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-删除线"><span class="toc-number">2.0.3.</span> <span class="toc-text">3.删除线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-链接"><span class="toc-number">2.0.4.</span> <span class="toc-text">4.链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-图片"><span class="toc-number">2.0.5.</span> <span class="toc-text">5.图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-代码-amp-代码段-amp-代码高亮"><span class="toc-number">2.0.6.</span> <span class="toc-text">6.代码&代码段&代码高亮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-表格"><span class="toc-number">2.0.7.</span> <span class="toc-text">7.表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-引用"><span class="toc-number">2.0.8.</span> <span class="toc-text">8.引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-复选框-amp-Todo-list"><span class="toc-number">2.0.9.</span> <span class="toc-text">9.复选框&Todo list</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-有序-amp-无序列表"><span class="toc-number">2.0.10.</span> <span class="toc-text">10.有序&无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-分割线"><span class="toc-number">2.0.11.</span> <span class="toc-text">11.分割线</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=//blog.gxuann.cn/2017/markdown-manual/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=//blog.gxuann.cn/2017/markdown-manual/&text=markdown语法手册"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=//blog.gxuann.cn/2017/markdown-manual/&is_video=false&description=markdown语法手册"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=markdown语法手册&body=Check out this article: //blog.gxuann.cn/2017/markdown-manual/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=//blog.gxuann.cn/2017/markdown-manual/&title=markdown语法手册"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=//blog.gxuann.cn/2017/markdown-manual/&name=markdown语法手册&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Articles</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+

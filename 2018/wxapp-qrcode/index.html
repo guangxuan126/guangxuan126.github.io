@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="2017年1月9日凌晨，小程序正式上线！2017年9月27日上午10点「QR二维码」正式上线。   概述暑假的时候我就寻思着可以研究研究这小程序，明确需求之后，觉得可以做一个二维码生成器，原因嘛，比较简单在github上找到了一个可以生成二维码的js，直接调用就行；一直拖到开学才开工，我记得当时9月份还在备考二级，然后没事的时候研究研究这个小程序，差不多2周，初版就成型了，然后急急忙忙地就向微信">
+<meta name="keywords" content="public,tutorials">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序-QR二维码">
+<meta property="og:url" content="//blog.gxuann.cn/2018/wxapp-qrcode/index.html">
+<meta property="og:site_name" content="GXUANN&#39;s Blog">
+<meta property="og:description" content="2017年1月9日凌晨，小程序正式上线！2017年9月27日上午10点「QR二维码」正式上线。   概述暑假的时候我就寻思着可以研究研究这小程序，明确需求之后，觉得可以做一个二维码生成器，原因嘛，比较简单在github上找到了一个可以生成二维码的js，直接调用就行；一直拖到开学才开工，我记得当时9月份还在备考二级，然后没事的时候研究研究这个小程序，差不多2周，初版就成型了，然后急急忙忙地就向微信">
+<meta property="og:image" content="https://images.gxuann.cn/archives/wxapp-qrcode-banner.png">
+<meta property="og:image" content="https://images.gxuann.cn/archives/gh_db3301df811e_258.jpg">
+<meta property="og:image" content="https://images.gxuann.cn/archives/gh_db3301df811e_258_normal.jpg">
+<meta property="og:updated_time" content="2018-08-01T07:54:30.417Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微信小程序-QR二维码">
+<meta name="twitter:description" content="2017年1月9日凌晨，小程序正式上线！2017年9月27日上午10点「QR二维码」正式上线。   概述暑假的时候我就寻思着可以研究研究这小程序，明确需求之后，觉得可以做一个二维码生成器，原因嘛，比较简单在github上找到了一个可以生成二维码的js，直接调用就行；一直拖到开学才开工，我记得当时9月份还在备考二级，然后没事的时候研究研究这个小程序，差不多2周，初版就成型了，然后急急忙忙地就向微信">
+<meta name="twitter:image" content="https://images.gxuann.cn/archives/wxapp-qrcode-banner.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.png">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>微信小程序-QR二维码</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Articles</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/time-lapse-photography/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2018/java-study-notes3/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=//blog.gxuann.cn/2018/wxapp-qrcode/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=//blog.gxuann.cn/2018/wxapp-qrcode/&text=微信小程序-QR二维码"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=//blog.gxuann.cn/2018/wxapp-qrcode/&is_video=false&description=微信小程序-QR二维码"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=微信小程序-QR二维码&body=Check out this article: //blog.gxuann.cn/2018/wxapp-qrcode/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=//blog.gxuann.cn/2018/wxapp-qrcode/&name=微信小程序-QR二维码&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#QRCode-3-0-新功能"><span class="toc-number">1.1.</span> <span class="toc-text">QRCode 3.0 新功能</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于-amp-说明"><span class="toc-number">2.</span> <span class="toc-text">关于&说明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关于PHPQrCode"><span class="toc-number">2.1.</span> <span class="toc-text">关于PHPQrCode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用"><span class="toc-number">2.2.</span> <span class="toc-text">使用</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        微信小程序-QR二维码
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">GXUANN's Blog</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-02-24T12:38:56.000Z" itemprop="datePublished">2018-02-24</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/public/">public</a>, <a class="tag-link" href="/tags/tutorials/">tutorials</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <blockquote>
+<p>2017年1月9日凌晨，小程序正式上线！2017年9月27日上午10点「QR二维码」正式上线。</p>
+</blockquote>
+<p><img src="https://images.gxuann.cn/archives/wxapp-qrcode-banner.png" alt="图自：腾讯网"><br></p>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>暑假的时候我就寻思着可以研究研究这小程序，明确需求之后，觉得可以做一个二维码生成器，原因嘛，比较简单在github上找到了一个可以生成二维码的js，直接调用就行；一直拖到开学才开工，我记得当时9月份还在备考二级，然后没事的时候研究研究这个小程序，差不多2周，初版就成型了，然后急急忙忙地就向微信提交了代码审核，当时我还一直在想会不会因为功能太单一了当做demo就给我退回来了，结果过了1天的审核期，收到了过审通知，立马上线了第一个版本。<br><br>这个版本的问题也超级多，最大的问题就是生成的二维码保存之后是空白的（后来发现了这个问题出在哪里了，原作者的js文件没有上色，导致绘制出一个透明的二维码，所以保存之后是空白的。）等到了十一假期的时候修正了这个错误，还添加了保存按钮，当时自豪地把这个版本称为2.0新时代。<br><br>一个简单的UI一个简单的JS库支撑着这个版本度过了3个月，期间我还加入了反馈功能，这样就可以接收到用户在使用过程中遇到的一些问题或者一些反馈。在这三个月的时间里，这个小程序积累了1400+个用户，日平均活跃量20上下，我个人对这个数据是比较满意的。<br><br>在这个寒假了我重写了这个小程序，使用了MinUI和WeUI这两种样式库，在这过程中通过使用框架也了解了什么是组件化开发，在设计完UI之后，我觉得之前使用JS文件生成二维码最大的缺点就是不支持emoji表情，我大概看了下原作者的JS文件，为了支持中文将字符进行了转码，这样输入emoji之后也同样会被转码，生成二维码之后就会乱码；为了解决这个问题，我找到了PHP中有个QRCODE库，将它架在服务器上，生成二维码的时候使用<code>wx.request(OBJECT)</code>这个API向服务器发送<code>GET</code>请求， 这样就通过参数生成二维码，<strong>这个操作会在浏览器内完成，不会生成图片，也不会被保存到服务器上</strong>；除了以上两点，我还调用了<code>wx.scanCode(OBJECT)</code>这个api，可以用来识别二维码，这样这个小程序的功能就全了。</p>
+<h4 id="QRCode-3-0-新功能"><a href="#QRCode-3-0-新功能" class="headerlink" title="QRCode 3.0 新功能"></a>QRCode 3.0 新功能</h4><ul>
+<li>新的UI:结合使用了Minui &amp; WeUI</li>
+<li>支持FontAwesome字体</li>
+<li>添加了扫描二维码的功能</li>
+</ul>
+<hr>
+<h3 id="关于-amp-说明"><a href="#关于-amp-说明" class="headerlink" title="关于&amp;说明"></a>关于&amp;说明</h3><p>1.PHP Qr Code：<a href="http://phpqrcode.sourceforge.net/" target="_blank" rel="external">官网 phpqrcode.sourceforge.net</a><br>2.MinUI：<a href="https://github.com/meili/minui" target="_blank" rel="external">Github项目地址</a><br>3.WeUI： <a href="https://github.com/Tencent/weui-wxss/" target="_blank" rel="external">Github项目地址</a><br>4.微信官方小程序开发手册： <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/" target="_blank" rel="external">官网地址</a></p>
+<h4 id="关于PHPQrCode"><a href="#关于PHPQrCode" class="headerlink" title="关于PHPQrCode"></a>关于PHPQrCode</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$value=$_GET[<span class="string">'detail'</span>];  </div><div class="line">$errorCorrectionLevel = <span class="string">"H"</span>;</div><div class="line">$matrixPointSize = <span class="string">"10"</span>;</div><div class="line">QRcode::png($value, <span class="keyword">false</span>, $errorCorrectionLevel, $matrixPointSize);</div></pre></td></tr></table></figure>
+<p>以上四句是部分代码，用于生成二维码的<code>QRcode::png</code>方法一共有6个参数：<br>1.<code>$value</code>：用于转换的数据。<br>2.<code>$outfile</code>：默认为<code>false</code>，不生成文件，只将二维码图片返回，否则需要给出存放生成二维码图片的路径.<br>3.<code>$errorCorrectionLevel</code>：控制二维码容错率，不同的参数表示二维码可被覆盖的区域百分比.<br>4.<code>$matrixPointSize</code>：控制生成图片的大小.<br>5.<code>$margin</code>：控制生成二维码的空白区域大小.<br>6.<code>$saveandprint</code>：保存二维码图片并显示出来，<code>$outfile</code>必须传递图片路径.</p>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>ok，说了这么多感谢大家的支持，打开微信扫描下面任意一个二维码就可以直接访问「QR二维码」</p>
+<hr>
+<p><img src="https://images.gxuann.cn/archives/gh_db3301df811e_258.jpg" alt=""><br><img src="https://images.gxuann.cn/archives/gh_db3301df811e_258_normal.jpg" alt=""></p>
+<hr>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Articles</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#QRCode-3-0-新功能"><span class="toc-number">1.1.</span> <span class="toc-text">QRCode 3.0 新功能</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于-amp-说明"><span class="toc-number">2.</span> <span class="toc-text">关于&说明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关于PHPQrCode"><span class="toc-number">2.1.</span> <span class="toc-text">关于PHPQrCode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用"><span class="toc-number">2.2.</span> <span class="toc-text">使用</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=//blog.gxuann.cn/2018/wxapp-qrcode/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=//blog.gxuann.cn/2018/wxapp-qrcode/&text=微信小程序-QR二维码"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=//blog.gxuann.cn/2018/wxapp-qrcode/&is_video=false&description=微信小程序-QR二维码"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=微信小程序-QR二维码&body=Check out this article: //blog.gxuann.cn/2018/wxapp-qrcode/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=//blog.gxuann.cn/2018/wxapp-qrcode/&title=微信小程序-QR二维码"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=//blog.gxuann.cn/2018/wxapp-qrcode/&name=微信小程序-QR二维码&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 | <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by gXuanN
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Articles</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
