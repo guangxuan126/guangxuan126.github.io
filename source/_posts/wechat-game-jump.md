@@ -1,7 +1,6 @@
 ---
 title: 微信小游戏「跳一跳」 高分神器！
 date: 2018-01-06 10:14:18
-et: wechat_game_jump
 tags:
   - tutorials
 ---

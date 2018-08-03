@@ -1,7 +1,6 @@
 ---
 title: 重新安装Windows的简易教程
 date: 2017-08-20 19:00:54
-et: install-windows
 tags:
     - tutorials
 

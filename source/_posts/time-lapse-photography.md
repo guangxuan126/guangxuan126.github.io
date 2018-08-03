@@ -1,7 +1,6 @@
 ---
 title: 大范围延时摄影测试
 date: 2018-04-14 18:21:20
-et: time-lapse-photography
 tags:
     - public
 ---

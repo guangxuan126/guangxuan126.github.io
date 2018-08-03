@@ -1,7 +1,6 @@
 ---
 title: HTML编码规范
 date: 2018-01-09 23:02:10
-et: html-style-guide
 tags:
   - public
 ---

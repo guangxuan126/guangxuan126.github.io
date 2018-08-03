@@ -1,6 +1,5 @@
 ---
 title: 正则表达式实例-邮箱有效性验证
-et: regex-emailverification
 date: 2018-06-19 12:16:02
 tags:
     - tutorials

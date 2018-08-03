@@ -1,7 +1,6 @@
 ---
 title: Hello-World-hello-HEXO
 date: 2017-07-28 17:22:21
-et: hello-world-hello-hexo
 tags:
 
 ---

@@ -1,7 +1,6 @@
 ---
 title: 微信小程序-QR二维码
 date: 2018-02-24 20:38:56
-et: wxapp-qrcode
 tags:
   - public
   - tutorials

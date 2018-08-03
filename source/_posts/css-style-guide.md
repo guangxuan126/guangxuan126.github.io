@@ -1,7 +1,6 @@
 ---
 title: CSS编码规范
 date: 2018-01-13 11:57:38
-et: css-style-guide
 tags:
   - public
 ---

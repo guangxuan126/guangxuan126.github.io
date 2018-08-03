@@ -83,11 +83,8 @@ deploy:
   type: git
   repository:
     gxuann: root@118.89.201.236:/root/hexo.git
-    repo: git@github.com:guangxuan126/guangxuan126.github.io.git
   branch: master
 
-#links
-github_username: guangxuan126
 
 Plugins:
 - hexo-generator-baidu-sitemap

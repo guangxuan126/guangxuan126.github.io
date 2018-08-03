@@ -1,7 +1,6 @@
 ---
 title: MSDN资源手册
 date: 2017-08-11 19:09:06
-et: msdn-manual
 tags:
     - tools
 ---

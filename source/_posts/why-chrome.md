@@ -1,7 +1,6 @@
 ---
 title: 为什么选择Chrome
 date: 2017-9-01 18:49:49
-et: why-chrome
 tags:
     - public
 ---

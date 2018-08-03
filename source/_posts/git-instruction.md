@@ -1,7 +1,6 @@
 ---
 title: Git常用指令整理
 date: 2018-01-03 20:58:04
-et: git-instruction
 tags:
   - tutorials
 ---

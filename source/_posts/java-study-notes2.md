@@ -1,7 +1,6 @@
 ---
 title: Java学习笔记(2)-标识符与关键字
 date: 2018-02-19 20:12:48
-et: java-study-notes2
 banner: https://images.gxuann.cn/banner/java-study-notes.png
 tags:
   - Java
