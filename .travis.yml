@@ -1,0 +1,21 @@
+anguage: node_js # 设置语言
+node_js: 8 # 设置相应版本
+install:
+    - npm install # 安装hexo及插件
+script:
+    - hexo clean # 清除
+    - hexo g # 生成
+after_script:
+    - cd ./public
+    - git init
+    - git config user.name "gXuanN" # 修改name
+    - git config user.email "tlfggx@gmail.com" # 修改email
+    - git add .
+    - git commit -m "Travis CI Auto Builder"
+    - git push --force --quiet "https://${Travis_token}@${GH_REF}" master:master 
+branches:
+    only:
+        - source #只监测hexo分支，hexo是我的分支的名称，可根据自己情况设置
+env:
+    global:
+        - GH_REF: github.com/guangxuan126/guangxuan126.github.io.git 
