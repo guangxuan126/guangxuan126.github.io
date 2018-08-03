@@ -90,6 +90,7 @@ Plugins:
 - hexo-generator-baidu-sitemap
 - hexo-generator-sitemap
 - hexo-generator-search
+- hexo-generator-feed
 
 urlforgoogle: https://blog.gxuann.cn/
 urlforbaidu: https://blog.gxuann.cn/
@@ -100,3 +101,12 @@ sitemap:
     path: sitemap.xml
 
 intro: Hi, thanks for visiting my blog, I'm an ordinary college student. I have a goal and I'm determined to be an excellent programmer.
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 10
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
