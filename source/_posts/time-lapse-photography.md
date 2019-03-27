@@ -9,7 +9,7 @@ tags:
 
 ---
 
-{% dplayer "url=https://videos.gxuann.cn/job_library-ltp.mp4" "theme=#FADFA3" "autoplay=false" "pic=https://images.gxuann.cn/archives/timelapsephotography.png" %}
+{% dplayer "url=https://videos.gxuann.cn/job_library-ltp.mp4" "theme=#FADFA3" "autoplay=false" "pic=https://i.loli.net/2019/03/25/5c98ae6ab97d5.png" %}
 
 &&
 end

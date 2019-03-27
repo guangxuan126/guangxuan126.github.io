@@ -1,7 +1,6 @@
 ---
 title: Java学习笔记(2)-标识符与关键字
 date: 2018-02-19 20:12:48
-banner: https://images.gxuann.cn/banner/java-study-notes.png
 tags:
   - Java
 ---
@@ -41,7 +40,7 @@ transient|true|try|void|volatile|while
 - 满足**Pascal**命名规范(首字母总要大小)
 
 ## 数据类型
-![](https://images.gxuann.cn/archives/java-study-notes2-datatype.png)
+![](https://i.loli.net/2019/03/27/5c9b3abe05294.png)
 - 引用数据类型：
     1. 类(class)
     2. 接口(interface)
@@ -103,10 +102,10 @@ boolean|布尔型|1
 - 块级
 
 ## 存储
-![](https://images.gxuann.cn/archives/java-study-notes2-ram.png)
+![](https://i.loli.net/2019/03/27/5c9b3ab863d9f.png)
 - 局部变量是存储在`栈`中
     * 如`int`，在定义之后会在，栈中划分一个`int`大小(4字节)的空间给`int`的变量
-    * ![](https://images.gxuann.cn/archives/java-study-notes2-ram2.png)
+    * ![](https://i.loli.net/2019/03/27/5c9b3ab87f718.png)
 
 ## 字符型字面值
 - 字符型字面值用单引号内的单个字符表示
@@ -142,7 +141,7 @@ boolean|布尔型|1
 - 分为自动类型转换和强制类型转换
 
 #### 自动类型转换顺序
-![](https://images.gxuann.cn/archives/java-study-notes2-typeconversion.png)
+![](https://i.loli.net/2019/03/27/5c9b3abe277f3.png)
 
 #### 强制类型转换
 - 如果A类型的数据表示范围比B类型大，则将A类型的值赋值给B类型，则需要强制类型转换

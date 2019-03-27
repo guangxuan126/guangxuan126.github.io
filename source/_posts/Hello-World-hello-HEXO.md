@@ -8,7 +8,7 @@ tags:
 >If I have seen further, it is by standing on the shoulders of giants.
 >—Isaac Newton
 
-![](https://images.gxuann.cn/archives/t1.jpg)
+![](https://i.loli.net/2019/03/25/5c98afbd6bb66.jpg)
 
 
 这是我在HEXO的第一篇文章，这里应该是我在不久的将来放弃WordPress时候的另一个根据地，哈哈。怎么说呢，或许那时候这就不应该叫做博客了，更多的是我自己写的一些教程或者一些奇奇怪怪的东西 算是自己留档的一个地方吧。

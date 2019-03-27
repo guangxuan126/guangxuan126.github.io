@@ -55,7 +55,7 @@ formBindsubmit: function(e){
 }
 ```
 监听表格提交的按钮事件，用这个表达式来检测用户输入的Email是否合法。
-![](https://images.gxuann.cn/archives/regex-emailverification1.gif)
+![](https://i.loli.net/2019/03/25/5c98aeb23962e.gif)
 <br>
 &&
 end

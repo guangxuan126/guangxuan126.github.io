@@ -35,7 +35,7 @@ tags:
 ---
 除了十大`how to`榜单，谷歌还制作了一个关于`how to`的宣传视频。从关心山火、飓风等自然灾难的起源、进展，到如何帮助战争难民及拉斯维加斯枪击案等社会问题的受害者；从如何安抚洪水中的小狗、如何成为一名坚强的女性等个体问题，到关注朝鲜的核导弹射程有多长等人类生存问题，视频中设置的`how to`疑问，都根据 2017 年谷歌搜索用户的搜索行为，进行了全方位的展示。
 
-{% dplayer "url=https://videos.gxuann.cn/job_Google%20-%20Year%20In%20Search%202017%28720P%29.mp4" "theme=#FADFA3" "autoplay=false" "pic=https://images.gxuann.cn/archives/GoogleYearInSearch2017.png" %}
+{% dplayer "url=https://videos.gxuann.cn/job_Google%20-%20Year%20In%20Search%202017%28720P%29.mp4" "theme=#FADFA3" "autoplay=false" "pic=https://i.loli.net/2019/03/27/5c9b3bf11ed21.png" %}
 <br>
 
   &&

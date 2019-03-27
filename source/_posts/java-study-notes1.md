@@ -1,7 +1,6 @@
 ---
 title: Java学习笔记(1)-初识
 date: 2018-02-19 19:51:24
-banner: https://images.gxuann.cn/banner/java-study-notes.png
 tags:
   - Java
 ---

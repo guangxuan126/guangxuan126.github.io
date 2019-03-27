@@ -60,19 +60,19 @@ convert gpt
 #### 附上一些图以说明其中步骤的注意点：
 >如果之前未安装和激活过Windows10，则会出现下面这个界面，点击`我没有产品密钥`以继续安装。
 
-![](https://images.gxuann.cn/installwindows_i1.png)
+![](https://i.loli.net/2019/03/27/5c9b3b6823b23.png)
 
 ---
 
 >在分区完成后会发现多出来2-3个容量在500MB以内的小分区，这是系统自动分出的ESP引导分区和Recovery恢复分区，注意这里需要正确选择安装Windows的分区。
 
-![](https://images.gxuann.cn/installwindows_i2.png)
+![](https://i.loli.net/2019/03/27/5c9b3b680ad47.png)
 
 ---
 
 >关于安装介质的制作，`写入硬盘镜像`窗口中，红色框内可直接默认，不用修改；`格式化`窗口内也是默认就好。
 
-![](https://images.gxuann.cn/installwindows_i4.png)
+![](https://i.loli.net/2019/03/27/5c9b3b67d6eb7.png)
 
 ---
 

@@ -25,7 +25,7 @@ John Gruber 在 2004 年创造了 Markdown 语言，在语法上有很大一部�
 ###### 标题H6
 ```
 `渲染效果：`
-![](https://images.gxuann.cn/markdown-manual_md1.png)
+![](https://i.loli.net/2019/03/25/5c98af3893159.png)
 
 ### 2.斜体&加粗
 ```
@@ -56,10 +56,10 @@ _斜体_
 
 ### 5.图片
 ```
-![alt注释](https://images.gxuann.cn/logo.png)
+![alt注释](https://i.loli.net/2019/03/25/5c98af4eb7e23.png)
 ```
 `渲染效果：`
-![这是logo](https://images.gxuann.cn/logo.png)
+![这是logo](https://i.loli.net/2019/03/25/5c98af4eb7e23.png)
 
 ### 6.代码&代码段&代码高亮
 ```

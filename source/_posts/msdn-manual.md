@@ -17,7 +17,7 @@ tags:
   这是我使用`Atom`和`amWiki`编写的一个轻文库，用于汇总一些常用的资源，搬运自itellyou,更多内容可访问itellyou.<br>
   `Atom`是Github出品的一款非常强大的编辑器.
   `amWiki`是一款由 JS 开发、依赖 Atom 或 Nodejs-Npm 的 Markdown 轻量级前端化开源文库系统, 作者:`TevinLi`.[Fork on Github](https://github.com/TevinLi/amWiki)
-  ![](https://images.gxuann.cn/archives/m1.png)
+  ![](https://i.loli.net/2019/03/25/5c98aede139e8.png)
 
 <br>
 #### More

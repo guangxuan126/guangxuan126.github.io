@@ -8,7 +8,7 @@ tags:
 
 >2017年1月9日凌晨，小程序正式上线！2017年9月27日上午10点「QR二维码」正式上线。
 
-![图自：腾讯网](https://images.gxuann.cn/archives/wxapp-qrcode-banner.png)<br>
+![图自：腾讯网](https://i.loli.net/2019/03/25/5c98abeb8d8d3.png)<br>
 ### 概述
 暑假的时候我就寻思着可以研究研究这小程序，明确需求之后，觉得可以做一个二维码生成器，原因嘛，比较简单在github上找到了一个可以生成二维码的js，直接调用就行；一直拖到开学才开工，我记得当时9月份还在备考二级，然后没事的时候研究研究这个小程序，差不多2周，初版就成型了，然后急急忙忙地就向微信提交了代码审核，当时我还一直在想会不会因为功能太单一了当做demo就给我退回来了，结果过了1天的审核期，收到了过审通知，立马上线了第一个版本。<br>
 这个版本的问题也超级多，最大的问题就是生成的二维码保存之后是空白的（后来发现了这个问题出在哪里了，原作者的js文件没有上色，导致绘制出一个透明的二维码，所以保存之后是空白的。）等到了十一假期的时候修正了这个错误，还添加了保存按钮，当时自豪地把这个版本称为2.0新时代。<br>
@@ -47,7 +47,7 @@ QRcode::png($value, false, $errorCorrectionLevel, $matrixPointSize);
 ok，说了这么多感谢大家的支持，打开微信扫描下面任意一个二维码就可以直接访问「QR二维码」
 
 ---
-![](https://images.gxuann.cn/archives/gh_db3301df811e_258.jpg)
-![](https://images.gxuann.cn/archives/gh_db3301df811e_258_normal.jpg)
+![](https://i.loli.net/2019/03/25/5c98abeb95ee5.jpg)
+![](https://i.loli.net/2019/03/25/5c98abec01f4c.jpg)
 
 ---

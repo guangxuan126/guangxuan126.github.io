@@ -1,7 +1,6 @@
 ---
 title: Java学习笔记(3)-运算符
 date: 2018-02-23 00:14:32
-banner: https://images.gxuann.cn/banner/java-study-notes.png
 tags:
   - Java
 ---
@@ -66,7 +65,7 @@ if(条件){
 - 逻辑运算符用来连接一个或多个条件，判断这些条件是否成立
 - 逻辑运算符的结果是布尔类型
 
-![](https://images.gxuann.cn/archives/java-study-notes3-logical.png)
+![](hhttps://i.loli.net/2019/03/27/5c9b3a218b465.png)
 
 - &：会计算整个表达式，再进行判断；&&：先计算左边的表达式，如果成立才接着计算右边的表达式，如果不成立，则后面的都不计算
 ```java
@@ -100,7 +99,7 @@ System.out.println(max);  //求a和b的最大值,max=20
 
 ## 运算符的优先级
 **优先级由大到小排列**
-![](https://images.gxuann.cn/archives/java-study-notes3-priority.png)
+![](https://i.loli.net/2019/03/27/5c9b3a21968b3.png)
 
 # 计算闰年问题
 ```java
