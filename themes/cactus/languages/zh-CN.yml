@@ -3,24 +3,14 @@ nav:
   about: 关于
   articles: 归档
   projects: 项目
-<<<<<<< Updated upstream
-=======
   tag: 标签
   category: 分类
->>>>>>> Stashed changes
   search: 搜索
 
 footer:
   copyright: Copyright
 
 index:
-<<<<<<< Updated upstream
-  find_me_on: Find me on
-  enum_comma: ','
-  enum_and: and
-  articles: 文章
-  projects: 项目
-=======
   find_me_on: 在这里找到我：
   enum_comma: ' '
   enum_and: ' '
@@ -28,7 +18,6 @@ index:
   projects: 项目
   topics: 标签
   most_recent: 最新的文章
->>>>>>> Stashed changes
 
 post:
   desktop:
@@ -47,12 +36,6 @@ search:
   no_results: 抱歉，没有符合您搜索条件的结果。请换其它关键词再试。
 
 pagination:
-<<<<<<< Updated upstream
-  page: Page %d of %d
-
-comments:
-  no_js: 加载评论需要在浏览器启用 JavaScript 脚本支持。
-=======
   page: 第 %d 页，共 %d 页
 
 comments:
@@ -61,4 +44,3 @@ comments:
 tooltip:
   copy_tip: 复制到粘贴板!
   copied: 复制成功!
->>>>>>> Stashed changes
