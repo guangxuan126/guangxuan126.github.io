@@ -1,0 +1,10 @@
+{
+  "name" : "_posts",
+  "fileExtension" : ".md",
+  "autoUploadInsertedImageKey" : "gxuann-https:\/\/upload-z1.qiniup.com",
+  "autoUploadInsertedImage" : true,
+  "folderType" : 10,
+  "mediaFloder" : "images\/{year}",
+  "orderBy" : 0,
+  "newlinesToBR" : 0
+}
