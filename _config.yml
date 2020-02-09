@@ -3,11 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
+<<<<<<< Updated upstream
 title: GXUANN's Blog
 subtitle:
 description: 技术,分享,讨论
 author: GuangXuan
 language:
+=======
+title: GXN ✘ Blog
+subtitle:
+description: 技术,分享,讨论
+author: gxuann
+language: en
+>>>>>>> Stashed changes
 timezone:
 
 # URL
@@ -29,7 +37,10 @@ skip_render:
   - README.md
   - CNAME
   - googleba63772d02b9705d.html
+<<<<<<< Updated upstream
   - tools/**
+=======
+>>>>>>> Stashed changes
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -80,6 +91,7 @@ theme: cactus
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
+<<<<<<< Updated upstream
   type: git
   repository:
     gxuann: root@118.89.201.236:/root/hexo.git
@@ -101,6 +113,27 @@ sitemap:
     path: sitemap.xml
 
 intro: Hi, thanks for visiting my blog, I'm an ordinary college student. I have a goal and I'm determined to be an excellent programmer.
+=======
+    type: git
+    repo: git@101.200.37.109:/home/git/blog.git 
+    branch: master
+
+Plugins:
+- hexo-generator-sitemap
+- hexo-generator-search
+- hexo-lazyload-image
+
+lazyload:
+  enable: true 
+  onlypost: false
+  loadingImg: https://cdn.gxuann.cn/load-image.jpg
+
+
+sitemap:
+    path: sitemap.xml
+
+intro: Always believe that something wonderful is about to happen. 
+>>>>>>> Stashed changes
 
 feed:
   type: atom
