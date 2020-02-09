@@ -25,12 +25,17 @@
   "homepage": "https://github.com/probberechts/cactus-dark#readme",
   "devDependencies": {
     "del": "*",
+<<<<<<< Updated upstream
     "gulp": "^4.*",
+=======
+    "gulp": "^4.0.0",
+>>>>>>> Stashed changes
     "gulp-decompress": "*",
     "gulp-download": "*",
     "gulp-jshint": "*",
     "gulp-stylint": "*",
     "js-yaml": "*",
+<<<<<<< Updated upstream
     "jshint": "*",
     "jshint-stylish": "*",
     "stylint": "*",
@@ -41,5 +46,19 @@
     "fontawesome5-webfont": "^5.0.4",
     "jquery": "^3.3.1",
     "justifiedGallery": "^3.6.5"
+=======
+    "jshint": "^2.9.6",
+    "jshint-stylish": "*",
+    "stylint": "*",
+    "stylint-stylish": "*",
+    "stylus-supremacy": "^2.12.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "*",
+    "clipboard": "^2.0.4",
+    "jquery": "^3.3.1",
+    "justifiedGallery": "^3.6.5",
+    "vazir-font": "*"
+>>>>>>> Stashed changes
   }
 }

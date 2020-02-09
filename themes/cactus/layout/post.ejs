@@ -6,6 +6,10 @@
         <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
       </span>
       <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
+<<<<<<< Updated upstream
+=======
+      <%- partial('_partial/post/category') %>
+>>>>>>> Stashed changes
       <%- partial('_partial/post/tag') %>
     </div>
   </header>

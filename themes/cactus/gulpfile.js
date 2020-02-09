@@ -11,14 +11,24 @@ var yaml = require('js-yaml');
 
 
 gulp.task('lib:clean',function(){
+<<<<<<< Updated upstream
   return del.sync([ './source/lib/*' ]);
+=======
+  return del([ './source/lib/*' ]);
+>>>>>>> Stashed changes
 })
 
 gulp.task('lib:fontAwesome',function(){
   return gulp.src([
+<<<<<<< Updated upstream
     'node_modules/fontawesome5-webfont/webfonts/*',
     'node_modules/fontawesome5-webfont/css/fontawesome-all.min.css'
   ], {base: 'node_modules/fontawesome5-webfont'})
+=======
+    'node_modules/@fortawesome/fontawesome-free/webfonts/*',
+    'node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+  ], {base: 'node_modules/@fortawesome/fontawesome-free'})
+>>>>>>> Stashed changes
     .pipe(gulp.dest('./source/lib/font-awesome'))
 })
 
@@ -31,6 +41,17 @@ gulp.task('lib:mesloFont', function () {
     .pipe(gulp.dest('./source/lib/meslo-LG'));
 });
 
+<<<<<<< Updated upstream
+=======
+
+gulp.task('lib:vazirFont',function(){
+  return gulp.src([
+    'node_modules/vazir-font/dist/*',
+  ], {base: 'node_modules/vazir-font/dist'})
+    .pipe(gulp.dest('./source/lib/vazir-font'))
+})
+
+>>>>>>> Stashed changes
 gulp.task('lib:justifiedGallery',function(){
   return gulp.src([
     'node_modules/justifiedGallery/dist/css/*.min.css',
@@ -44,6 +65,14 @@ gulp.task('lib:jQuery',function(){
     .pipe(gulp.dest('./source/lib/jquery'))
 })
 
+<<<<<<< Updated upstream
+=======
+gulp.task('lib:clipboard',function(){
+  return gulp.src(['node_modules/clipboard/dist/clipboard.min.js'])
+    .pipe(gulp.dest('./source/lib/clipboard'))
+})
+
+>>>>>>> Stashed changes
 gulp.task('lint:js', function() {
   return gulp.src([
     './source/js/**/*.js',
@@ -100,7 +129,13 @@ gulp.task('validate:languages', function(cb) {
   }
 });
 
+<<<<<<< Updated upstream
 gulp.task('lib', gulp.parallel('lib:clean', 'lib:jQuery', 'lib:fontAwesome', 'lib:mesloFont', 'lib:justifiedGallery'));
+=======
+gulp.task('lib', gulp.series(
+  'lib:clean', 'lib:jQuery', 'lib:clipboard', 'lib:fontAwesome', 'lib:mesloFont',
+  'lib:vazirFont', 'lib:justifiedGallery'));
+>>>>>>> Stashed changes
 gulp.task('lint', gulp.parallel('lint:js', 'lint:stylus'));
 gulp.task('validate', gulp.parallel('validate:config', 'validate:languages'));
 gulp.task('default', gulp.parallel('lint', 'validate'));

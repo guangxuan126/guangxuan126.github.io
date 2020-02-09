@@ -11,14 +11,24 @@ global-reset()
   box-sizing: border-box
 
 html
+<<<<<<< Updated upstream
+=======
+  margin: 0
+  padding: 0
+>>>>>>> Stashed changes
   height: 100%
   border-top: 2px solid $color-text
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
 
 body
+<<<<<<< Updated upstream
   display: flex
   flex-direction: column
+=======
+  margin: 0 0 68px 0
+  height: 100%
+>>>>>>> Stashed changes
   background-color: $color-background
   color: $color-text
   font-display: swap // @stylint ignore
@@ -27,6 +37,7 @@ body
   font-family: $font-family-body
   line-height: $line-height
   text-rendering: geometricPrecision
+<<<<<<< Updated upstream
 
   antialias()
 
@@ -35,6 +46,21 @@ body
 
   @extend $base-style
 
+=======
+  flex: 1
+
+  antialias()
+
+  @extend $base-style
+
+.content
+  position: relative
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow-wrap: break-word
+
+>>>>>>> Stashed changes
   p
     hyphens(auto)
 
@@ -113,6 +139,12 @@ body
 @import "_partial/footer"
 @import "_partial/pagination"
 @import "_partial/search"
+<<<<<<< Updated upstream
+=======
+@import "_partial/tags"
+@import "_partial/tooltip"
+@import "_partial/categories"
+>>>>>>> Stashed changes
 // Code
 @import "_highlight/" + $highlight
 
@@ -134,7 +166,12 @@ pre
 
 code
   padding: 0 5px
+<<<<<<< Updated upstream
   border: 1px dotted $color-border
+=======
+  
+  background-color: rgba(27,31,35,.05);
+>>>>>>> Stashed changes
   border-radius: 2px
   -webkit-border-radius: 2px
 
@@ -171,7 +208,25 @@ code
     &:after
       clear: both
 
+<<<<<<< Updated upstream
   pre
+=======
+  &:hover 
+    .btn-copy
+      opacity: 1
+
+  .btn-copy
+    font-size: 1.2rem
+    position: absolute
+    right: 20px
+    opacity: 0
+    transition: opacity 0.2s ease-in
+    &:hover
+      color: $color-accent-1
+
+  pre
+    margin: 0
+>>>>>>> Stashed changes
     padding: 0
     border: none
     background: none
@@ -181,6 +236,361 @@ code
 
   td.gutter
     text-align: right
+<<<<<<< Updated upstream
 
   .line
     height: 22px
+=======
+    opacity: .2
+
+  .line
+    height: 22px
+
+@media(prefers-color-scheme: dark)
+  html
+    border-top: 2px solid #c9cacc
+  body
+    background-color: #1d1f21
+    color: #c9cacc
+  
+  body h1,
+  body .h1
+    color: #2bbc8a
+
+  body h2,
+  body .h2,
+  body h3
+    color: #eee
+
+  body h4,
+  body h5,
+  body h6
+    color: #ccc
+
+  body hr
+    border: 0.5px dashed #ccc
+
+  body th 
+    border-bottom: 1px dashed #666
+    color: #eee
+
+  .content a 
+    color: #c9cacc
+    background-image: linear-gradient(transparent, transparent 5px, #c9cacc 5px, #c9cacc)
+
+  .content a:hover 
+    background-image: linear-gradient(transparent, transparent 4px, #d480aa 4px, #d480aa)
+
+  .content a.icon
+    background: none
+
+  .content a.icon:hover
+    color: #d480aa
+
+  .content h1 a,
+  .content .h1 a,
+  .content h2 a,
+  .content h3 a,
+  .content h4 a,
+  .content h5 a,
+  .content h6 a 
+    color: inherit
+
+  .content h1 a:hover,
+  .content .h1 a:hover,
+  .content h2 a:hover,
+  .content h3 a:hover,
+  .content h4 a:hover,
+  .content h5 a:hover,
+  .content h6 a:hover 
+    background-image: linear-gradient(transparent, transparent 6px, #d480aa 6px, #d480aa)
+
+  #header h1,
+  #header .h1 
+    color: #c9cacc
+  
+  #header a
+    color: inherit 
+  
+  #header #nav
+    color: #2bbc8a
+
+  #header #nav ul a
+    color: #2bbc8a
+
+  #header #nav ul a:hover 
+    background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a)
+
+  #header #nav ul li 
+    border-color: #2bbc8a
+  
+  #header #nav ul a:hover 
+    background: none
+  
+  #header-post a 
+    background: none
+    color: inherit
+
+  #header-post a.icon
+    background: none
+
+  #header-post a.icon:hover 
+    color: #d480aa
+
+  #header-post #menu-icon:hover 
+    color: #2bbc8a
+
+  #header-post #menu-icon-tablet:hover 
+    color: #2bbc8a
+
+  #header-post #top-icon-tablet:hover 
+    color: #2bbc8a
+
+  #header-post .active 
+    color: #2bbc8a
+
+  #header-post #nav
+    color: #2bbc8a
+
+  #header-post #nav ul a 
+    color: #2bbc8a
+
+  #header-post #nav ul a:hover 
+    background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a)
+
+  #header-post #nav ul li 
+    border-right: 1px dotted #2bbc8a
+
+  #header-post #toc a:hover 
+    color: #d480aa
+  
+  #header-post #toc .toc-level-2
+    color: #c9cacc
+
+  #header-post #toc .toc-level-2:before
+    color: #2bbc8a
+
+  #header-post #toc .toc-level-3
+    color: #666
+
+  #header-post #toc .toc-level-4
+    color: #525252
+
+  #footer-post
+    background: #212326
+    border-top: 1px solid #666
+
+  #footer-post a
+    background: none
+    color: inherit
+  
+  #footer-post a.icon 
+    background: none
+  #footer-post a.icon:hover
+    color: #d480aa
+
+  #footer-post #nav-footer 
+    background: #323539
+
+  #footer-post #nav-footer a
+    color: #2bbc8a
+
+  #footer-post #nav-footer a:hover 
+    background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a)
+
+  #footer-post #actions-footer a
+    color: #2bbc8a
+
+  #footer-post #share-footer
+    background: #323539
+
+  #footer-post #toc-footer
+    background: #323539
+
+  #footer-post #toc-footer a:hover
+    color: #d480aa
+
+  #footer-post #toc-footer .toc-level-2 
+    color: #c9cacc
+
+  #footer-post #toc-footer .toc-level-2:before
+    color: #2bbc8
+
+  #footer-post #toc-footer .toc-level-3
+    color: #666
+
+  .post-list .post-item .meta
+    color: #666
+
+  article header .meta *
+    color: #ccc
+
+  article .content h2:before
+    color: #2bbc8a
+
+  article .content blockquote
+    background: inherit
+    color: #ccffb6
+
+  article .content blockquote:before
+    color: #ccffb6
+
+  article .content blockquote footer
+    color: #666
+
+  article .content blockquote footer a 
+    background-image: linear-gradient(transparent, transparent 5px, #666 5px, #666)
+    color: #666
+
+  article .content blockquote footer a:hover 
+    background-image: linear-gradient(transparent, transparent 4px, #858585 4px, #858585)
+    color: #858585
+  
+  article .content .caption
+    color: #666
+
+  .article-tag .tag-link
+    background-image: linear-gradient(transparent, transparent 10px, #d480aa 10px, #d480aa)
+
+  .article-category .category-link
+    background-image: linear-gradient(transparent, transparent 10px, #d480aa 10px, #d480aa)
+
+  #archive .post-list .post-item .meta
+    color: #666
+
+  #footer
+    color: #666
+
+  #footer li
+    border-color: #666
+
+  #footer a 
+    color: #666
+  #footer a:hover
+    color: #858585
+
+  .pagination .page-number 
+    color: #c9cacc;
+
+  .pagination a
+    color: #c9cacc
+  
+  .pagination a:hover:not(.active)
+    color: #eee
+
+  .search-input
+    background-color: #1d1f21
+    color: #c9cacc
+  .search-input:focus
+    border: solid 1px #2bbc8a
+
+  #search-result a.search-result-title
+    color: #c9cacc;
+
+  #search-result em.search-keyword 
+    border-bottom: 1px dashed #d480aa;
+    color: #d480aa;
+
+  .search-no-result
+    color: #c9cacc;
+  #tag-cloud .tag-cloud-title
+    color: #666
+
+  .tooltipped::after 
+    color: #1d1f21
+    background: #c9cacc;
+
+  .tooltipped::before
+    color: #c9cacc
+    opacity: 0
+
+  .tooltipped-s::before,
+  .tooltipped-sw::before
+    border-bottom-color: #c9cacc
+
+  #categories .category-list-title
+    color: #666
+  #categories .category-list .category-list-item .category-list-count
+    color: #666
+
+  .highlight 
+    color: #d1d9e1;
+
+  .highlight .code .comment,
+  .highlight .code .quote 
+    color: #969896;
+  
+  .highlight .code .keyword,
+  .highlight .code .selector-tag,
+  .highlight .code .literal,
+  .highlight .code .type,
+  .highlight .code .addition 
+    color: #c9c;
+
+  .highlight .code .number,
+  .highlight .code .selector-attr,
+  .highlight .code .selector-pseudo 
+    color: #f99157;
+
+  .highlight .code .string,
+  .highlight .code .doctag,
+  .highlight .code .regexp 
+    color: #8abeb7;
+
+  .highlight .code .title,
+  .highlight .code .name,
+  .highlight .code .section,
+  .highlight .code .built_in 
+    color: #b5bd68;
+  
+  .highlight .code .variable,
+  .highlight .code .template-variable,
+  .highlight .code .selector-id,
+  .highlight .code .class .title 
+    color: #fc6;
+  
+  .highlight .code .symbol,
+  .highlight .code .bullet,
+  .highlight .code .subst,
+  .highlight .code .meta,
+  .highlight .code .link 
+    color: #f99157;
+  
+  .highlight .code .deletion 
+    color: #dc322f;
+  
+  .highlight .code .formula 
+    background: #eee8d5;
+  
+  .highlight .code .attr,
+  .highlight .code .attribute 
+    color: #81a2be;
+  
+  pre
+    border: 1px dotted #666
+    
+  code
+    background-color: rgba(24, 24, 24, 0.8)
+
+  .highlight
+    background: #212326
+
+  .highlight figcaption
+    color: #666;
+
+  .highlight figcaption a
+    color: #666
+
+  .highlight figcaption a:hover
+    color: #858585
+
+  .highlight .btn-copy 
+    font-size: 1.2rem;
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in
+
+  .highlight .btn-copy:hover
+    color: #2bbc8a
+>>>>>>> Stashed changes

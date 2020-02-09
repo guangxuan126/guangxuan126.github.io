@@ -5,11 +5,16 @@
     <% if (is_post()) { %>
       <%- partial('_partial/post/actions_desktop') %>
     <% } %>
+<<<<<<< Updated upstream
     <div class="content index my4">
+=======
+    <div class="content index py4">
+>>>>>>> Stashed changes
         <% if (!is_post()) { %>
           <%- partial('_partial/header') %>
         <% } %>
         <%- body %>
+<<<<<<< Updated upstream
     </div>
     <% if (is_post()) { %>
       <%- partial('_partial/post/actions_mobile') %>
@@ -19,3 +24,14 @@
 </html>
 <%- partial('_partial/styles') %>
 <%- partial('_partial/scripts') %>
+=======
+        <% if (is_post()) { %>
+          <%- partial('_partial/post/actions_mobile') %>
+        <% } %>
+        <%- partial('_partial/footer') %>
+    </div>
+    <%- partial('_partial/styles') %>
+    <%- partial('_partial/scripts') %>
+</body>
+</html>
+>>>>>>> Stashed changes

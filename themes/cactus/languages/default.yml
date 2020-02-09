@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 nav:
   home: 首页
   about: 关于
@@ -36,3 +37,6 @@ pagination:
 
 comments:
   no_js: 加载评论需要在浏览器启用 JavaScript 脚本支持。
+=======
+en.yml
+>>>>>>> Stashed changes

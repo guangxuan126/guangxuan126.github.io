@@ -46,8 +46,28 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
     # theme: landscape
     theme: cactus
     ```
+<<<<<<< Updated upstream
 
 3. Run: `hexo generate` and `hexo server`
+=======
+    See below for more information on how to customize this theme.
+    
+3. Create pages and articles with the `hexo new [layout] <title>` command.
+    For example, to create an "about me" page, run:
+    ```sh
+    $ hexo new page about
+    ```
+    This will create a new file in `source/about/index.md`
+    Similary, you can create a new article with
+    ```sh
+    $ hexo new post "hello world"
+    ```
+    and add some interesting content in `source/_posts/hello-world.md`.
+    
+4. Run: `hexo generate` and `hexo server`
+
+5. [Publish your blog](https://hexo.io/docs/deployment)!
+>>>>>>> Stashed changes
 
 
 ## Configuration
@@ -55,10 +75,17 @@ You can (and should) modify a couple of settings. An overview of all settings
 can be found in  [_config.yml](_config.yml). The most important ones are
 discussed below.
 
+<<<<<<< Updated upstream
 There are two possible methods to override these variables. As a first option,
 you could fork the theme and maintain a custom branch with your settings.
 Alternatively, you can configure it from your site's primary configuration
 file. Therefore, define you custom settings under the `theme_config` variable.
+=======
+There are two possible methods to override the defaults. As a first option,
+you could fork the theme and maintain a custom branch with your settings.
+Alternatively, you can configure it from your site's primary configuration
+file. Therefore, define your custom settings under the `theme_config` variable.
+>>>>>>> Stashed changes
 For example:
 
 ```yml
@@ -73,7 +100,11 @@ theme_config:
 colorscheme: dark
 ```
 
+<<<<<<< Updated upstream
 This will result in the white color scheme.
+=======
+This will override the default black colorscheme in `themes/cactus/_config.yml`.
+>>>>>>> Stashed changes
 
 
 ### Color scheme
@@ -166,9 +197,18 @@ If you are new to Hexo and internationalization (i18n), please read
 Currently, the theme is delivered with support for:
 
 - English (en), default
+<<<<<<< Updated upstream
 - Chinese (Simplified, PRC) (zh-CN)
 - Dutch (nl)
 - French (fr)
+=======
+- Brazilian Portuguese (pt-br)
+- Catalan (ca)
+- Chinese (Simplified, PRC) (zh-CN)
+- Dutch (nl)
+- French (fr)
+- Italian (it)
+>>>>>>> Stashed changes
 - Persian (fa)
 - Russian (ru)
 - Spanish (es)
@@ -240,6 +280,50 @@ Pick one of [the available colorschemes](https://github.com/probberechts/hexo-th
 highlight: COLORSCHEME_NAME
 ```
 
+<<<<<<< Updated upstream
+=======
+### Tags and categories
+Tags and categories can be included in the front-matter of your posts. For example:
+
+```markdown
+title: Tags and Categories
+date: 2017-12-24 23:29:53
+tags:
+- Foo
+- Bar
+categories: 
+- Baz
+---
+
+This post contains 2 tags and 1 category.
+```
+
+You can create a page with a tag cloud by running:
+
+```sh
+$ hexo new page tags
+```
+
+Next, add `type: tags` to the front-matter of `source/tags/index.md`. You can also
+add a tag cloud to the home page by setting the `tags_overview` option to `true`.
+
+Similarly, you can create a page with an overview of all categories by running:
+
+```sh
+$ hexo new page categories
+```
+
+and adding `type: categories` to the front-matter of `source/categories/index.md`. 
+
+Finally, don't forget to create a link to these pages, for example in the navigation menu:
+
+```yml
+nav:
+  tags: /tags/
+  categories: /categories/
+```
+
+>>>>>>> Stashed changes
 
 ### Local search
 
@@ -253,15 +337,31 @@ $ npm install hexo-generator-search --save
 Next, create a page to display the search engine:
 
 ```sh
+<<<<<<< Updated upstream
 $ hexo new page Search
 ```
 and put `search: true` in the front-matter.
+=======
+$ hexo new page search
+```
+and put `type: search` in the front-matter.
+
+```markdown
+title: Search
+type: search
+---
+```
+>>>>>>> Stashed changes
 
 Finally, edit the `_config.yml` and add a link to the navigation menu.
 
 ```yml
 nav:
+<<<<<<< Updated upstream
   search: /Search/
+=======
+  search: /search/
+>>>>>>> Stashed changes
 ```
 
 

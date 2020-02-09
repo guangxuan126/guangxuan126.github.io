@@ -1,6 +1,7 @@
 <!-- jquery -->
 <%- js('lib/jquery/jquery.min') %>
 <%- js('lib/justified-gallery/js/jquery.justifiedGallery.min.js') %>
+<<<<<<< Updated upstream
 <%- js('js/main') %>
 <!-- search -->
 <% if (config.search && page.search){ %>
@@ -10,12 +11,49 @@
     var $resultArea = $("#search-result");
 
     inputArea.onfocus = function() {
+=======
+<!-- clipboard -->
+<% if (is_post()){ %>
+  <%- js('lib/clipboard/clipboard.min') %>
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"<%= __('tooltip.copy_tip') %>\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "<%= __('tooltip.copied') %>");
+      e.clearSelection();
+    })
+  })
+  </script>
+<% } %>
+<%- js('js/main') %>
+<!-- search -->
+<% if (config.search && (page.search || page.type === "search")){ %>
+  <%- js('js/search.js') %>
+  <script type="text/javascript">
+  $(function() {
+
+    var $inputArea = $("input#search-input");
+    var $resultArea = document.querySelector("div#search-result");
+
+    $inputArea.focus(function() {
+>>>>>>> Stashed changes
       var search_path = "<%= config.search.path %>";
       if (search_path.length == 0) {
         search_path = "search.xml";
       }
       var path = "<%= config.root %>" + search_path;
       searchFunc(path, 'search-input', 'search-result');
+<<<<<<< Updated upstream
     }
 
     inputArea.onkeydown = function(){
@@ -31,6 +69,27 @@
             $(".search-no-result").hide();
         }
     })
+=======
+    });
+
+    $inputArea.keydown(function(e) {
+      if (e.which == 13) {
+        e.preventDefault();
+      }
+    });
+
+    var observer = new MutationObserver(function(mutationsList, observer) {
+      if (mutationsList[0].addedNodes) {
+        $(".search-no-result").show(200);
+      } else {
+        $(".search-no-result").hide();
+      }
+    });
+
+    observer.observe($resultArea, { childList: true });
+
+  });
+>>>>>>> Stashed changes
   </script>
 <% } %>
 <!-- Google Analytics -->
