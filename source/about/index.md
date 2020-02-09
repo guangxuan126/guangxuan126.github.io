@@ -3,29 +3,6 @@ title: About
 layout: about
 ---
 
-<<<<<<< Updated upstream
-![](https://images.gxuann.cn/about.png)
-
----
-
-# 关于我
-一个非常喜欢代码的男孩子，常年混迹Github和各大IT论坛，给自己取名gXuanN,90后。
-
-## 爱好：
-- 游戏（暴雪死忠粉）
-- 爱折腾
-- 网球
-
-## 用着还行的：
-- HTML/CSS
-- JavaScript
-
-## 正在学的：
-- Java
-- MySql
-
-非科班出身，**期望**成为一名优秀的程序员
-=======
 ![](https://cdn.gxuann.cn/about.png)
 
 ---
@@ -43,7 +20,6 @@ layout: about
 有前端开发、微信小程序开发的经验，目前正在学Java和Python。
 
 **期望**成为一名独立开发者💪
->>>>>>> Stashed changes
 
 最喜欢的一句话：
 > Stay Hungry, Stay Foolish.
@@ -52,14 +28,10 @@ layout: about
 
 > Github: [ClickHere](https://github.com/guangxuan126)👈
 Weibo: [ClickHere](https://weibo.com/guangxuan126)👈
-<<<<<<< Updated upstream
-Twitter: [ClickHere](https://twitter.com/guangxuan126)👈
-=======
 SteamID: [ClickHere](https://steamcommunity.com/profiles/76561198278952466/) 👈
 <i class="fa fa-trophy" aria-hidden="true"></i> PSNID: gXuanN 
 🎮 NintendoID: SW-0500-7932-4426 
 
->>>>>>> Stashed changes
 
 &&
 end

@@ -1,17 +1,6 @@
 <!-- jquery -->
 <%- js('lib/jquery/jquery.min') %>
 <%- js('lib/justified-gallery/js/jquery.justifiedGallery.min.js') %>
-<<<<<<< Updated upstream
-<%- js('js/main') %>
-<!-- search -->
-<% if (config.search && page.search){ %>
-  <%- js('js/search.js') %>
-  <script type="text/javascript">
-    var inputArea = document.querySelector("#search-input");
-    var $resultArea = $("#search-result");
-
-    inputArea.onfocus = function() {
-=======
 <!-- clipboard -->
 <% if (is_post()){ %>
   <%- js('lib/clipboard/clipboard.min') %>
@@ -46,7 +35,6 @@
     var $resultArea = document.querySelector("div#search-result");
 
     $inputArea.focus(function() {
->>>>>>> Stashed changes
       var search_path = "<%= config.search.path %>";
       if (search_path.length == 0) {
         search_path = "search.xml";

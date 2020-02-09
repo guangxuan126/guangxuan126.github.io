@@ -1,13 +1,9 @@
 nav:
   home: Home
   about: About
-<<<<<<< Updated upstream
-  articles: Articles
-=======
   articles: Article
   tag: Tag
   category: Category
->>>>>>> Stashed changes
   projects: Projects
   search: Search
 
@@ -18,13 +14,8 @@ index:
   find_me_on: Find me on
   enum_comma: ','
   enum_and: and
-<<<<<<< Updated upstream
-  articles: Articles
-  projects: Projects
-=======
   articles: Posts()
   projects: Projects()
->>>>>>> Stashed changes
   topics: Topics
   most_recent: Most recent
 
@@ -33,10 +24,7 @@ post:
     previous: Previous post
     next: Next post
     back_to_top: Back to top
-<<<<<<< Updated upstream
-=======
     switch: switch mode
->>>>>>> Stashed changes
     share: Share post
   mobile:
     menu: Menu
@@ -48,13 +36,6 @@ search:
   search: Search...
   no_results: No results found.
 
-<<<<<<< Updated upstream
-pagination:
-  page: Page %d of %d
-
-comments:
-  no_js: Please enable JavaScript to view the comments.
-=======
 tag_cloud:
   zero: No tags
 
@@ -83,4 +64,3 @@ comments:
 tooltip:
   copy_tip: Copy to clipboard!
   copied: Copied!
->>>>>>> Stashed changes
