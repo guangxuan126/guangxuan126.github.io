@@ -41,23 +41,6 @@
       }
       var path = "<%= config.root %>" + search_path;
       searchFunc(path, 'search-input', 'search-result');
-<<<<<<< Updated upstream
-    }
-
-    inputArea.onkeydown = function(){
-        if(event.keyCode==13){
-            return false
-        }
-    }
-
-    $resultArea.bind("DOMNodeRemoved DOMNodeInserted", function(e) {
-        if (!$(e.target).text()) {
-            $(".search-no-result").show(200);
-        } else {
-            $(".search-no-result").hide();
-        }
-    })
-=======
     });
 
     $inputArea.keydown(function(e) {
@@ -77,7 +60,6 @@
     observer.observe($resultArea, { childList: true });
 
   });
->>>>>>> Stashed changes
   </script>
 <% } %>
 <!-- Google Analytics -->
