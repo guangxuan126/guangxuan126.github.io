@@ -43,13 +43,6 @@
     <% if (theme.direction) { %>
       <%- css('css/rtl') %>
     <% } %>
-    <!-- dark mode-->
-    <!--
-    <script>
-        "dark" === localStorage.getItem("dark_mode") ? document.write(
-            '<link rel="stylesheet" href="https://cdn.gxuann.cn/blog-css-dark.css"></span>') : ""
-    </script>
-    -->
     <!-- rss -->
     <% if (theme.rss === '' && config.feed && config.feed.path) { %>
       <% theme.rss = config.feed.path %>
