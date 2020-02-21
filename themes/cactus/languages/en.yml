@@ -34,7 +34,7 @@ post:
 
 search:
   search: Search...
-  no_results: No results found.
+  no_results: 😬 Oops, no results found.
 
 tag_cloud:
   zero: No tags
