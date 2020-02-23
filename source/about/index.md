@@ -16,8 +16,8 @@ layout: about
 建立于2017年7月28日，由[HEXO](https://hexo.io/)强力驱动，托管于[阿里云](https://www.aliyun.com/)
 
 ## 关于我：
-🐭96年射手座，非计算机专业但是有一颗热爱软件开发的心，已经大学本科毕业，喜欢折腾各种新东西。
-有前端开发、微信小程序开发的经验，目前正在学Java和Python。
+🐭96年射手座，不是计算机专业但是有一颗热爱开发的心，已经大学本科毕业，喜欢折腾各种新东西。
+有前端开发、微信小程序开发的经验，目前正在学Java和Linux。
 
 **期望**成为一名独立开发者💪
 
@@ -26,11 +26,9 @@ layout: about
 
 ---
 
-> Github: [ClickHere](https://github.com/guangxuan126)👈
-Weibo: [ClickHere](https://weibo.com/guangxuan126)👈
-SteamID: [ClickHere](https://steamcommunity.com/profiles/76561198278952466/) 👈
+<i class="fab fa-steam"></i> SteamID: https://steamcommunity.com/profiles/76561198278952466/
 <i class="fa fa-trophy" aria-hidden="true"></i> PSNID: gXuanN 
-🎮 NintendoID: SW-0500-7932-4426 
+<i class="fas fa-gamepad"></i> NintendoID: SW-0500-7932-4426 
 
 
 &&
